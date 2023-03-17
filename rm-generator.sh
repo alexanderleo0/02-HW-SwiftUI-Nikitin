@@ -1,6 +1,6 @@
 MODULE="Modules/Networking/Sources/Networking/"
 
-openapi-generator generate -i "catsapi.yml" -g swift5 -o "api-mobile"
+openapi-generator generate -i "RMAPI.yml" -g swift5 -o "api-mobile"
 rm -r $MODULE""*
 
 
