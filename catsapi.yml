@@ -1,0 +1,220 @@
+openapi: 3.0.3
+info:
+  title: CatsAPI
+  description: thecatapi.com
+  version: 1.0.0
+servers:
+- url: https://api.thecatapi.com/v1/
+tags:
+- name: CatsName
+  description: Cats with breeds
+- name: breeds
+  description: all info about breeds
+paths:
+  /images/search:
+    get:
+      tags:
+      - CatsName
+      summary: cats list
+      operationId: getSomeCats
+      parameters:
+      - name: limit
+        in: query
+        description: Number of images to return between
+        required: false
+        schema:
+          type: string
+      - name: page
+        in: query
+        description: The page number to use when Paginating through the images
+        required: false
+        schema:
+          type: string
+      - name: order
+        in: query
+        description: The Order to return the images in by their upload date. RAND = random
+        required: false
+        schema:
+          type: string
+      - name: has_breeds
+        in: query
+        description: Only return images that have breed information
+        required: false
+        schema:
+          type: string
+      - name: breed_ids
+        in: query
+        description: The IDs of the breeds to filter the images. e.g. ?breed_ids=beng,abys
+        required: false
+        schema:
+          type: string
+      - name: category_ids
+        in: query
+        description: The IDs of the categories to filter the images. e.g. ?breed_ids=1,5,14
+        required: false
+        schema:
+          type: string
+      - name: sub_id
+        in: query
+        description: Filter images that have the sub_id value you used when uploading them
+        required: false
+        schema:
+          type: string
+      - name: api_key
+        in: query
+        description: API key
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CatElements'
+        default:
+          description: enexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+  /breeds:
+    get:
+      tags:
+      - breeds
+      responses:
+        "200":
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BreedsElements'
+        default:
+          description: enexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+components:
+  schemas:
+    BreedsElements:
+      type: array
+      items:
+        $ref: '#/components/schemas/Breeds'
+    CatElements:
+      type: array
+      items:
+        $ref: '#/components/schemas/Cat'
+    Cat:
+      properties:
+        id:
+          type: "string"
+        url:
+          type: "string"
+        width:
+          type: "number"
+        height:
+          type: "number"
+        breeds:
+          type: array
+          items:
+            $ref: '#/components/schemas/Breeds'
+    Weight:
+      required:
+        - "imperial"
+        - "metric"
+      properties:
+        imperial:
+          type: "string"
+        metric:
+          type: "string"
+      type: "object"
+    Breeds:
+      properties:
+        weight:
+          $ref: '#/components/schemas/Weight'
+        id:
+          type: "string"
+        name:
+          type: "string"
+        cfa_url:
+          type: "string"
+        vetstreet_url:
+          type: "string"
+        vcahospitals_url:
+          type: "string"
+        temperament:
+          type: "string"
+        origin:
+          type: "string"
+        country_codes:
+          type: "string"
+        country_code:
+          type: "string"
+        description:
+          type: "string"
+        life_span:
+          type: "string"
+        indoor:
+          type: "number"
+        lap:
+          type: "number"
+        alt_names:
+          type: "string"
+        adaptability:
+          type: "number"
+        affection_level:
+          type: "number"
+        child_friendly:
+          type: "number"
+        dog_friendly:
+          type: "number"
+        energy_level:
+          type: "number"
+        grooming:
+          type: "number"
+        health_issues:
+          type: "number"
+        intelligence:
+          type: "number"
+        shedding_level:
+          type: "number"
+        social_needs:
+          type: "number"
+        stranger_friendly:
+          type: "number"
+        vocalisation:
+          type: "number"
+        experimental:
+          type: "number"
+        hairless:
+          type: "number"
+        natural:
+          type: "number"
+        rare:
+          type: "number"
+        rex:
+          type: "number"
+        suppressed_tail:
+          type: "number"
+        short_legs:
+          type: "number"
+        wikipedia_url:
+          type: "string"
+        hypoallergenic:
+          type: "number"
+        reference_image_id:
+          type: "string"
+    ErrorModel:
+      required:
+      - code
+      - message
+      type: object
+      properties:
+        message:
+          type: string
+        code:
+          maximum: 600
+          minimum: 100
+          type: integer
