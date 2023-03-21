@@ -17,13 +17,13 @@ paths:
         in: query
         required: false
         schema:
-          type: number
+          type: integer
       - name: id
         description: The id of the character
         in: query
         required: false
         schema:
-          type: number
+          type: integer
       - name: name
         in: query
         description: The name of the character.
@@ -76,16 +76,12 @@ components:
       properties:
         info:
           type: "object"
-          required:
-          - "count"
-          - "pages"
-          - "next"
-          - "prev"
+          
           properties:
             count:
-              type: "number"
+              type: "integer"
             pages:
-              type: "number"
+              type: "integer"
             next:
               type: "string"
             prev:
@@ -98,7 +94,7 @@ components:
       type: "object"
       properties:
         id:
-          type: "number"
+          type: "integer"
         name:
           type: "string"
         status:
@@ -110,9 +106,6 @@ components:
         gender:
           type: "string"
         origin:
-          required:
-            - "name"
-            - "url"
           type: "object"
           properties:
             name:
@@ -120,9 +113,6 @@ components:
             url:
               type: "string"
         location:
-          required:
-            - "name"
-            - "url"
           type: "object"
           properties:
             name:
