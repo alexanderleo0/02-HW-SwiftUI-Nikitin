@@ -13,7 +13,8 @@ struct _2_HW_SwiftUI_NikitinApp: App {
     var body: some Scene {
         WindowGroup {
             RootView()
-                .environmentObject(HeroesViewModel())
+                
+                .environmentObject(CSViewModel())
         }
     }
 }

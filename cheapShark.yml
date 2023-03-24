@@ -1,0 +1,249 @@
+openapi: 3.0.3
+info:
+  title: Cheap Shark API
+  description: https://www.cheapshark.com/
+  version: 1.0.0
+servers:
+- url: https://www.cheapshark.com/api/1.0
+
+paths:
+  /stores:
+    get:
+      tags:
+      - All stores
+      responses:
+        "200":
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StoresList'
+        default:
+          description: enexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+  /deals:
+    get:
+      tags:
+      - All deals
+      parameters:
+      - name: storeID
+        in: query
+        description: Comma separated list of store ID's to filter on. If not set, all stores will be shown.
+        required: false
+        schema:
+          type: string
+      - name: pageNumber
+        in: query
+        description: The requested pagt number, value is 0 indexed. The X-Total-Page-Count HTTP header on the response will give you the max value for this parameter.
+        required: false
+        schema:
+          type: integer
+      - name: pageSize
+        in: query
+        description: The number of deals per page, max value of 60
+        required: false
+        schema:
+          type: integer
+      - name: sortBy
+        in: query
+        description:  Default Deal Rating Criteria to sort the list by, possible values - Deal Rating, Title, Savings, Price, Metacritic, Reviews, Release, Store, Recent
+        required: false
+        schema:
+          type: string
+      - name: desc
+        in: query
+        description:  Determines sort direction
+        required: false
+        schema:
+          type: boolean
+      - name: onSale
+        in: query
+        description:  Flag to include only games that are currently on sale
+        required: false
+        schema:
+          type: string
+
+          
+      responses:
+        "200":
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DealsList'
+        default:
+          description: enexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+ 
+components:
+  schemas:
+    DealsList:
+      type: "array"
+      items:
+        $ref: '#/components/schemas/Deals'
+        
+    Deals:
+      required:
+        - "internalName"
+        - "title"
+      #   - "metacriticLink"
+        - "dealID"
+        - "storeID"
+        - "gameID"
+        - "salePrice"
+        - "normalPrice"
+        - "isOnSale"
+        - "savings"
+      #   - "metacriticScore"
+      #   - "steamRatingText"
+      #   - "steamRatingPercent"
+      #   - "steamRatingCount"
+      #   - "steamAppID"
+        - "releaseDate"
+        - "lastChange"
+        - "dealRating"
+      #   - "thumb"
+      properties:
+        internalName:
+          type: "string"
+        title:
+          type: "string"
+        metacriticLink:
+          type: "string"
+        dealID:
+          type: "string"
+        storeID:
+          type: "string"
+        gameID:
+          type: "string"
+        salePrice:
+          type: "string"
+        normalPrice:
+          type: "string"
+        isOnSale:
+          type: "string"
+        savings:
+          type: "string"
+        metacriticScore:
+          type: "string"
+        steamRatingText:
+          type: "string"
+        steamRatingPercent:
+          type: "string"
+        steamRatingCount:
+          type: "string"
+        steamAppID:
+          type: "string"
+        releaseDate:
+          type: "number"
+        lastChange:
+          type: "number"
+        dealRating:
+          type: "string"
+        thumb:
+          type: "string"
+      type: "object"
+    
+    StoresList:
+      type: "array"
+      items:
+        $ref: '#/components/schemas/Store'
+      
+    Store:
+      type: "object"
+      required:
+        - "storeID"
+        - "storeName"
+        - "isActive"
+        - "images"
+       
+      properties:
+        storeID:
+          type: "string"
+        storeName:
+          type: "string"
+        isActive:
+          type: "number"
+        images:
+          $ref: '#/components/schemas/StoreImages'
+          
+    StoreImages:
+      type:
+        "object"
+      required:
+        - "banner"
+        - "logo"
+        - "icon"
+      properties:
+        banner:
+          type: "string"
+        logo:
+          type: "string"
+        icon:
+          type: "string"
+        
+    # Characters:
+    #   type: "object"
+    #   properties:
+    #     id:
+    #       type: "integer"
+    #     name:
+    #       type: "string"
+    #     status:
+    #       type: "string"
+    #     species:
+    #       type: "string"
+    #     type:
+    #       type: "string"
+    #     gender:
+    #       type: "string"
+    #     origin:
+    #       required:
+    #         - "name"
+    #         - "url"
+    #       type: "object"
+    #       properties:
+    #         name:
+    #           type: "string"
+    #         url:
+    #           type: "string"
+    #     location:
+    #       required:
+    #         - "name"
+    #         - "url"
+    #       type: "object"
+    #       properties:
+    #         name:
+    #           type: "string"
+    #         url:
+    #           type: "string"
+    #     image:
+    #       type: "string"
+    #     episode:
+    #       type: "array"
+    #       items:
+    #         type: "string"
+    #     url:
+    #       type: "string"
+    #     created:
+    #       type: "string"
+   
+    ErrorModel:
+      required:
+      - code
+      - message
+      type: object
+      properties:
+        message:
+          type: string
+        code:
+          maximum: 600
+          minimum: 100
+          type: integer
+

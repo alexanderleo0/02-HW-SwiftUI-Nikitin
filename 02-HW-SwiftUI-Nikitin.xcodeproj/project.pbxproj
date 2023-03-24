@@ -7,20 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B217A4429C6317800911C30 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B217A4329C6317800911C30 /* DetailScreen.swift */; };
+		7B1FE9C029CB1D730009EA32 /* Array+IsLast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1FE9BF29CB1D730009EA32 /* Array+IsLast.swift */; };
+		7B1FE9C229CB1DBE0009EA32 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1FE9C129CB1DBE0009EA32 /* View+Extension.swift */; };
+		7B1FE9C429CB1E1D0009EA32 /* ProgressViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1FE9C329CB1E1D0009EA32 /* ProgressViewModifier.swift */; };
+		7B1FE9C729CB1FCD0009EA32 /* Deals+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1FE9C629CB1FCD0009EA32 /* Deals+Identifiable.swift */; };
 		7B217A4629C6320E00911C30 /* NavStack in Frameworks */ = {isa = PBXBuildFile; productRef = 7B217A4529C6320E00911C30 /* NavStack */; };
 		7B27EF8329C2432C00FAD458 /* _2_HW_SwiftUI_NikitinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B27EF8229C2432C00FAD458 /* _2_HW_SwiftUI_NikitinApp.swift */; };
 		7B27EF8529C2432C00FAD458 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B27EF8429C2432C00FAD458 /* RootView.swift */; };
 		7B27EF8729C2432D00FAD458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B27EF8629C2432D00FAD458 /* Assets.xcassets */; };
 		7B27EF8A29C2432D00FAD458 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B27EF8929C2432D00FAD458 /* Preview Assets.xcassets */; };
-		7B27EFA929C25BA800FAD458 /* HeroesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B27EFA829C25BA800FAD458 /* HeroesViewModel.swift */; };
 		7B27EFAE29C261C100FAD458 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 7B27EFAD29C261C100FAD458 /* Networking */; };
 		7B27EFB129C2660500FAD458 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7B27EFB029C2660500FAD458 /* Kingfisher */; };
 		7B27EFB429C363E900FAD458 /* ALNUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7B27EFB329C363E900FAD458 /* ALNUI */; };
+		7B9A03A229CA468A00861941 /* CSViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A03A129CA468A00861941 /* CSViewModel.swift */; };
+		7BBBABE329CCD5AA00846513 /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBBABE229CCD5AA00846513 /* SecondScreen.swift */; };
+		7BBBABE529CCD5D100846513 /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBBABE429CCD5D100846513 /* ThirdScreen.swift */; };
+		7BBBABE829CCD64800846513 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBBABE729CCD64800846513 /* CardsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7B217A4329C6317800911C30 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		7B1FE9BF29CB1D730009EA32 /* Array+IsLast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+IsLast.swift"; sourceTree = "<group>"; };
+		7B1FE9C129CB1DBE0009EA32 /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		7B1FE9C329CB1E1D0009EA32 /* ProgressViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewModifier.swift; sourceTree = "<group>"; };
+		7B1FE9C629CB1FCD0009EA32 /* Deals+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deals+Identifiable.swift"; sourceTree = "<group>"; };
 		7B27EF7F29C2432C00FAD458 /* 02-HW-SwiftUI-Nikitin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02-HW-SwiftUI-Nikitin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B27EF8229C2432C00FAD458 /* _2_HW_SwiftUI_NikitinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _2_HW_SwiftUI_NikitinApp.swift; sourceTree = "<group>"; };
 		7B27EF8429C2432C00FAD458 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -28,8 +37,12 @@
 		7B27EF8929C2432D00FAD458 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B27EFA629C25A2D00FAD458 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Networking; path = Modules/Networking; sourceTree = "<group>"; };
 		7B27EFA729C25A3800FAD458 /* NavStack */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NavStack; path = Modules/NavStack; sourceTree = "<group>"; };
-		7B27EFA829C25BA800FAD458 /* HeroesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesViewModel.swift; sourceTree = "<group>"; };
 		7B27EFB229C363E300FAD458 /* ALNUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ALNUI; path = Modules/ALNUI; sourceTree = "<group>"; };
+		7B9A03A129CA468A00861941 /* CSViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSViewModel.swift; sourceTree = "<group>"; };
+		7BBBABE129CC963700846513 /* -2-HW-SwiftUI-Nikitin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "-2-HW-SwiftUI-Nikitin-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7BBBABE229CCD5AA00846513 /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
+		7BBBABE429CCD5D100846513 /* ThirdScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreen.swift; sourceTree = "<group>"; };
+		7BBBABE729CCD64800846513 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B1FE9BE29CB1D5A0009EA32 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7B1FE9BF29CB1D730009EA32 /* Array+IsLast.swift */,
+				7B1FE9C129CB1DBE0009EA32 /* View+Extension.swift */,
+				7B1FE9C629CB1FCD0009EA32 /* Deals+Identifiable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7B1FE9C529CB1E220009EA32 /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				7B1FE9C329CB1E1D0009EA32 /* ProgressViewModifier.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
 		7B27EF7629C2432C00FAD458 = {
 			isa = PBXGroup;
 			children = (
@@ -68,9 +99,12 @@
 		7B27EF8129C2432C00FAD458 /* 02-HW-SwiftUI-Nikitin */ = {
 			isa = PBXGroup;
 			children = (
+				7BBBABE129CC963700846513 /* -2-HW-SwiftUI-Nikitin-Info.plist */,
 				7B27EF8229C2432C00FAD458 /* _2_HW_SwiftUI_NikitinApp.swift */,
-				7B27EF8429C2432C00FAD458 /* RootView.swift */,
-				7B217A4329C6317800911C30 /* DetailScreen.swift */,
+				7B1FE9C529CB1E220009EA32 /* ViewModifier */,
+				7B1FE9BE29CB1D5A0009EA32 /* Extensions */,
+				7BBBABE929CCD64D00846513 /* Views */,
+				7BBBABE629CCD5DC00846513 /* Screens */,
 				7B27EFAA29C25BD200FAD458 /* ViewModels */,
 				7B27EF8629C2432D00FAD458 /* Assets.xcassets */,
 				7B27EF8829C2432D00FAD458 /* Preview Content */,
@@ -106,9 +140,27 @@
 		7B27EFAA29C25BD200FAD458 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				7B27EFA829C25BA800FAD458 /* HeroesViewModel.swift */,
+				7B9A03A129CA468A00861941 /* CSViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7BBBABE629CCD5DC00846513 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				7B27EF8429C2432C00FAD458 /* RootView.swift */,
+				7BBBABE229CCD5AA00846513 /* SecondScreen.swift */,
+				7BBBABE429CCD5D100846513 /* ThirdScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		7BBBABE929CCD64D00846513 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7BBBABE729CCD64800846513 /* CardsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,10 +242,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B217A4429C6317800911C30 /* DetailScreen.swift in Sources */,
+				7BBBABE829CCD64800846513 /* CardsView.swift in Sources */,
+				7BBBABE529CCD5D100846513 /* ThirdScreen.swift in Sources */,
+				7B9A03A229CA468A00861941 /* CSViewModel.swift in Sources */,
 				7B27EF8529C2432C00FAD458 /* RootView.swift in Sources */,
-				7B27EFA929C25BA800FAD458 /* HeroesViewModel.swift in Sources */,
+				7B1FE9C429CB1E1D0009EA32 /* ProgressViewModifier.swift in Sources */,
 				7B27EF8329C2432C00FAD458 /* _2_HW_SwiftUI_NikitinApp.swift in Sources */,
+				7B1FE9C229CB1DBE0009EA32 /* View+Extension.swift in Sources */,
+				7B1FE9C729CB1FCD0009EA32 /* Deals+Identifiable.swift in Sources */,
+				7B1FE9C029CB1D730009EA32 /* Array+IsLast.swift in Sources */,
+				7BBBABE329CCD5AA00846513 /* SecondScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +383,7 @@
 				DEVELOPMENT_TEAM = N73PD4YDBG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-2-HW-SwiftUI-Nikitin-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -355,6 +414,7 @@
 				DEVELOPMENT_TEAM = N73PD4YDBG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-2-HW-SwiftUI-Nikitin-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
