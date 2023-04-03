@@ -17,6 +17,7 @@ final class CSViewModel: ObservableObject {
     
     private var pageFor : [Store:Int] = .init()
     
+
     init () {
         fetchStores()
         
@@ -67,3 +68,5 @@ final class CSViewModel: ObservableObject {
         
     }
 }
+
+

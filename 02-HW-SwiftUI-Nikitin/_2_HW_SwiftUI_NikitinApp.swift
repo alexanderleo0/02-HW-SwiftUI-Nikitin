@@ -9,7 +9,8 @@ import SwiftUI
 
 @main
 struct _2_HW_SwiftUI_NikitinApp: App {
-
+    let configurator: () = Configurator.shared.setup()
+    
     var body: some Scene {
         WindowGroup {
             RootView()

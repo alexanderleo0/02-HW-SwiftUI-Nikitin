@@ -6,7 +6,7 @@
       "location" : "https://github.com/alexanderleo0/ALNUI",
       "state" : {
         "branch" : "main",
-        "revision" : "fe5b3d7298a17203cd4ecca7387cfa81f6853aa6"
+        "revision" : "847359c7c81ad5c50f6e0ac99e6f28799cd4ef7b"
       }
     },
     {
@@ -15,7 +15,7 @@
       "location" : "https://github.com/onevcat/Kingfisher.git",
       "state" : {
         "branch" : "master",
-        "revision" : "af4be924ad984cf4d16f4ae4df424e79a443d435"
+        "revision" : "9375e4a0e5db3698c1f92bd5d1dc88b0b71caa8b"
       }
     },
     {
@@ -33,7 +33,7 @@
       "location" : "https://github.com/alexanderleo0/Networking",
       "state" : {
         "branch" : "R&M_edition",
-        "revision" : "b6512fad48c0fb6f68f46b78e03bcfc2e8d81e1c"
+        "revision" : "f21a8b0dccc27d58d843ccc1a852d3c0f7520fca"
       }
     }
   ],

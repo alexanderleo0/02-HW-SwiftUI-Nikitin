@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B17312429D892FD0098F8BC /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17312329D892FD0098F8BC /* ServiceLocator.swift */; };
+		7B17312629D894BC0098F8BC /* InjectWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17312529D894BC0098F8BC /* InjectWrapper.swift */; };
+		7B17312829D8959D0098F8BC /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B17312729D8959D0098F8BC /* Configurator.swift */; };
 		7B1FE9C029CB1D730009EA32 /* Array+IsLast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1FE9BF29CB1D730009EA32 /* Array+IsLast.swift */; };
 		7B1FE9C229CB1DBE0009EA32 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1FE9C129CB1DBE0009EA32 /* View+Extension.swift */; };
 		7B1FE9C429CB1E1D0009EA32 /* ProgressViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1FE9C329CB1E1D0009EA32 /* ProgressViewModifier.swift */; };
@@ -26,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B17312329D892FD0098F8BC /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		7B17312529D894BC0098F8BC /* InjectWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectWrapper.swift; sourceTree = "<group>"; };
+		7B17312729D8959D0098F8BC /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		7B1FE9BF29CB1D730009EA32 /* Array+IsLast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+IsLast.swift"; sourceTree = "<group>"; };
 		7B1FE9C129CB1DBE0009EA32 /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		7B1FE9C329CB1E1D0009EA32 /* ProgressViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewModifier.swift; sourceTree = "<group>"; };
@@ -105,6 +111,9 @@
 				7B27EFAA29C25BD200FAD458 /* ViewModels */,
 				7B27EF8629C2432D00FAD458 /* Assets.xcassets */,
 				7B27EF8829C2432D00FAD458 /* Preview Content */,
+				7B17312329D892FD0098F8BC /* ServiceLocator.swift */,
+				7B17312529D894BC0098F8BC /* InjectWrapper.swift */,
+				7B17312729D8959D0098F8BC /* Configurator.swift */,
 			);
 			path = "02-HW-SwiftUI-Nikitin";
 			sourceTree = "<group>";
@@ -242,13 +251,16 @@
 				7BBBABE829CCD64800846513 /* CardsView.swift in Sources */,
 				7BBBABE529CCD5D100846513 /* ThirdScreen.swift in Sources */,
 				7B9A03A229CA468A00861941 /* CSViewModel.swift in Sources */,
+				7B17312429D892FD0098F8BC /* ServiceLocator.swift in Sources */,
 				7B27EF8529C2432C00FAD458 /* RootView.swift in Sources */,
 				7B1FE9C429CB1E1D0009EA32 /* ProgressViewModifier.swift in Sources */,
 				7B27EF8329C2432C00FAD458 /* _2_HW_SwiftUI_NikitinApp.swift in Sources */,
 				7B1FE9C229CB1DBE0009EA32 /* View+Extension.swift in Sources */,
+				7B17312629D894BC0098F8BC /* InjectWrapper.swift in Sources */,
 				7B1FE9C729CB1FCD0009EA32 /* Deals+Identifiable.swift in Sources */,
 				7B1FE9C029CB1D730009EA32 /* Array+IsLast.swift in Sources */,
 				7BBBABE329CCD5AA00846513 /* SecondScreen.swift in Sources */,
+				7B17312829D8959D0098F8BC /* Configurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
