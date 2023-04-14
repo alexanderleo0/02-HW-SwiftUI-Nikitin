@@ -23,6 +23,9 @@
 		7BBBABE329CCD5AA00846513 /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBBABE229CCD5AA00846513 /* SecondScreen.swift */; };
 		7BBBABE529CCD5D100846513 /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBBABE429CCD5D100846513 /* ThirdScreen.swift */; };
 		7BBBABE829CCD64800846513 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBBABE729CCD64800846513 /* CardsView.swift */; };
+		7BDEB6B029E9391E00071276 /* ALNUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7BDEB6AF29E9391E00071276 /* ALNUI */; };
+		7BDEB6B329E9394600071276 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 7BDEB6B229E9394600071276 /* Networking */; };
+		7BDEB6B629E9396E00071276 /* NavStack in Frameworks */ = {isa = PBXBuildFile; productRef = 7BDEB6B529E9396E00071276 /* NavStack */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +38,6 @@
 		7B27EF8429C2432C00FAD458 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		7B27EF8629C2432D00FAD458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B27EF8929C2432D00FAD458 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7B27EFA629C25A2D00FAD458 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Networking; path = Modules/Networking; sourceTree = "<group>"; };
-		7B27EFA729C25A3800FAD458 /* NavStack */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NavStack; path = Modules/NavStack; sourceTree = "<group>"; };
-		7B27EFB229C363E300FAD458 /* ALNUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ALNUI; path = Modules/ALNUI; sourceTree = "<group>"; };
 		7B9A03A129CA468A00861941 /* CSViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSViewModel.swift; sourceTree = "<group>"; };
 		7BBBABE129CC963700846513 /* -2-HW-SwiftUI-Nikitin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "-2-HW-SwiftUI-Nikitin-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7BBBABE229CCD5AA00846513 /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
@@ -50,10 +50,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BDEB6B329E9394600071276 /* Networking in Frameworks */,
 				7B27EFB429C363E900FAD458 /* ALNUI in Frameworks */,
 				7B27EFB129C2660500FAD458 /* Kingfisher in Frameworks */,
 				7B27EFAE29C261C100FAD458 /* Networking in Frameworks */,
+				7BDEB6B629E9396E00071276 /* NavStack in Frameworks */,
 				7B217A4629C6320E00911C30 /* NavStack in Frameworks */,
+				7BDEB6B029E9391E00071276 /* ALNUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,9 +133,6 @@
 		7B27EFA529C25A2D00FAD458 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				7B27EFB229C363E300FAD458 /* ALNUI */,
-				7B27EFA629C25A2D00FAD458 /* Networking */,
-				7B27EFA729C25A3800FAD458 /* NavStack */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -184,6 +184,9 @@
 				7B27EFB029C2660500FAD458 /* Kingfisher */,
 				7B27EFB329C363E900FAD458 /* ALNUI */,
 				7B217A4529C6320E00911C30 /* NavStack */,
+				7BDEB6AF29E9391E00071276 /* ALNUI */,
+				7BDEB6B229E9394600071276 /* Networking */,
+				7BDEB6B529E9396E00071276 /* NavStack */,
 			);
 			productName = "02-HW-SwiftUI-Nikitin";
 			productReference = 7B27EF7F29C2432C00FAD458 /* 02-HW-SwiftUI-Nikitin.app */;
@@ -215,6 +218,9 @@
 			mainGroup = 7B27EF7629C2432C00FAD458;
 			packageReferences = (
 				7B27EFAF29C2660500FAD458 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				7BDEB6AE29E9391E00071276 /* XCRemoteSwiftPackageReference "ALNUI" */,
+				7BDEB6B129E9394600071276 /* XCRemoteSwiftPackageReference "Networking" */,
+				7BDEB6B429E9396E00071276 /* XCRemoteSwiftPackageReference "NavStack" */,
 			);
 			productRefGroup = 7B27EF8029C2432C00FAD458 /* Products */;
 			projectDirPath = "";
@@ -466,6 +472,30 @@
 				kind = branch;
 			};
 		};
+		7BDEB6AE29E9391E00071276 /* XCRemoteSwiftPackageReference "ALNUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexanderleo0/ALNUI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		7BDEB6B129E9394600071276 /* XCRemoteSwiftPackageReference "Networking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexanderleo0/Networking";
+			requirement = {
+				branch = "R&M_edition";
+				kind = branch;
+			};
+		};
+		7BDEB6B429E9396E00071276 /* XCRemoteSwiftPackageReference "NavStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexanderleo0/NavStack";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -485,6 +515,21 @@
 		7B27EFB329C363E900FAD458 /* ALNUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ALNUI;
+		};
+		7BDEB6AF29E9391E00071276 /* ALNUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7BDEB6AE29E9391E00071276 /* XCRemoteSwiftPackageReference "ALNUI" */;
+			productName = ALNUI;
+		};
+		7BDEB6B229E9394600071276 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7BDEB6B129E9394600071276 /* XCRemoteSwiftPackageReference "Networking" */;
+			productName = Networking;
+		};
+		7BDEB6B529E9396E00071276 /* NavStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7BDEB6B429E9396E00071276 /* XCRemoteSwiftPackageReference "NavStack" */;
+			productName = NavStack;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
